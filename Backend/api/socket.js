@@ -1,5 +1,5 @@
 const { Server } = require("socket.io");
-const { handleSocketConnection } = require("./controllers/chatController");
+const { handleSocketConnection } = require("../controllers/chatController");
 
 const setupSocket = (server) => {
   const io = new Server(server, {
